@@ -107,7 +107,9 @@ Our code uses the `esm` package to compute the embeddings (the model used is `ES
 
 ## Notes
 
-If the sample size is too small (or not diverse enough), you may encounter an error when computing the FID due to a large imaginary component. The only thing you can do is increase the sample size.
+The FID computed with ESM3 embeddings will take on large values. For example, the FID of a set of PDB structures to our reference set will be around 100,000 (to see this, you can run e.g. `protfid --pdb_dir examples/esm_test`). This is normal and is due to the large norms of the ESM3 embeddings. See also the range of values found in our paper for different perturbations and generative models.
+
+If the sample size is too small (or not diverse enough), you may encounter an error when computing the FID due to a large imaginary component. The only thing you can really do is increase the sample size.
 
 When computing embeddings with ESM3, the batch size is set adaptively based on the length of the sequences. The sequences are processed in decreasing order so the first few batches will have a small batch size and take longer.
 
