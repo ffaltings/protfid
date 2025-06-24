@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "protfid"
+version = "0.0"
+dependencies = [
+    "appdirs",
+    "matplotlib",
+    "scikit-learn",
+    "esm",
+    "numpy",
+]
+
+[project.scripts]
+protfid = "protfid.fid:main"
+
+[tool.setuptools]
+packages = ["protfid"]
+
+[project.urls]
+Homepage = "https://github.com/yourname/my-package"
