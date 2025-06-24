@@ -12,7 +12,7 @@ The package was tested with python 3.10 and can be installed from source using p
 
 Then clone the repository,
 
-`git clone ...`
+`git clone git@github.com:ffaltings/protfid.git`
 
 navigate to the directory,
 
@@ -29,6 +29,7 @@ Or to install in editable mode, run
 You also need to have access to the ESM3 weights, which we use for computing embeddings. You can request access here: `https://huggingface.co/EvolutionaryScale/esm3-sm-open-v1`
 
 Once you have access, you need to log in to your huggingface account:
+
 `huggingface-cli login`
 
 You should only need to login once.
