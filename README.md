@@ -8,7 +8,10 @@ The main application of the FID is to evaluate structures sampled from a generat
 
 The package was tested with python 3.10 and can be installed from source using pip. Optionally, you can first create a virtual environment, for example with conda,
 
-`conda create --name protfid python=3.10`
+```
+conda create --name protfid python=3.10
+conda activate protfid
+```
 
 Then clone the repository,
 
